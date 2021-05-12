@@ -1,9 +1,9 @@
 import pandas as pd
 import pymysql
 
-
-df_cfb = pd.read_csv('CFBAnalytics.csv')
-
+pd.set_option('display.max_rows', None)
+# df_cfb = pd.read_csv('CFBAnalytics.csv')
+# print(df_cfb)
 conn = pymysql.connect(database='cfb_data', user='root',
                        password='')
 cursor = conn.cursor()
